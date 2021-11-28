@@ -3,6 +3,7 @@
 body {
     display: flex;
     flex-direction: column;
+    /*align-items: center;*/
     margin: 0;
     font-family: Roboto, sans-serif;
 }
@@ -10,13 +11,19 @@ body {
 .header {
     background-color: #1f2937;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 20px 200px;
-    /*border: 2px solid red;*/
+    padding: 20px 0; /*200px;*/
 }
 
-.header div {
+.header-child {
+    /*border: 2px solid red;*/
+    flex: 0 1 73%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header div div{
     font-size: 24px;
     color: #f9faf8;
     font-weight: bold;
@@ -24,8 +31,15 @@ body {
 
 .first {
     background-color: #1f2937;
-    padding: 80px 200px 100px 200px;
+    padding: 80px 0 100px 0;
     display: flex;
+    justify-content: center;
+    
+}
+
+.first-child{
+    display: flex;
+    flex: 0 1 73%;
     gap: 50px;
 }
 
@@ -63,6 +77,36 @@ button {
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+.second {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    text-align: center;
+    padding: 40px;
+}
+
+.second-two { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.second-two div {
+    border: 2px solid red;
+    flex-basis: 160px;
+    flex-shrink: 0;
+}
+
+.second-two .second-text{
+    color: #1f2937;
+}
+
+.box-image {
+    height: 160px;
+    width: 160px;
 }
 
 ul {
